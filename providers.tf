@@ -11,6 +11,7 @@ provider "aws" {
 
   endpoints {
     s3 = var.endpoints
+    iam = var.endpoints
   }
 }
 

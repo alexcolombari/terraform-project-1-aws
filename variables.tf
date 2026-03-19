@@ -15,3 +15,9 @@ variable "endpoints" {
   type        = string
   default     = "http://localhost:4566"
 }
+
+variable "iam_users" {
+  description = "Default Users"
+  type        = list(string)
+  default     = ["alex", "gabriela", "joao"]
+}
