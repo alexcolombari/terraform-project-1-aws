@@ -3,7 +3,7 @@
 ![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.14.0-844FBA?logo=terraform)
 
 ## 🚀 Overview
-This repository demonstrates a complete **Infrastructure as Code (IaC)** workflow. It aims to simulate a production-ready cloud environment locally, focusing on security, data resilience, and developer experience (DevEx).
+This repository demonstrates a complete **Infrastructure as Code (IaC)** workflow. It aims to simulate a production-ready cloud environment locally, focusing on security, data resilience, and developer experience (DevEx).<br>
 This project automates the provisioning of AWS resources in a local environment (WSL2/Ubuntu). It uses Terraform to manage S3 buckets (with versioning) and IAM users. An integrated setup script automates the entire process from Docker to the Terraform application.
 
 ---
