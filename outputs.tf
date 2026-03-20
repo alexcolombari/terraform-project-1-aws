@@ -5,7 +5,7 @@ output "s3" {
 
 output "users" {
   description = "IAM Users Output"
-  value       = aws_iam_user.users[*]
+  value       = [for user in aws_iam_user.users : user.arn]
 }
 
 output "site" {

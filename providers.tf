@@ -1,7 +1,5 @@
 provider "aws" {
-  region     = var.region
-  access_key = "test"
-  secret_key = "test"
+  region = var.region
 
   skip_credentials_validation = true
   skip_metadata_api_check     = true
@@ -10,7 +8,7 @@ provider "aws" {
   s3_use_path_style = true
 
   endpoints {
-    s3 = var.endpoints
+    s3  = var.endpoints
     iam = var.endpoints
   }
 }
