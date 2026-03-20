@@ -1,6 +1,7 @@
 # AWS Infrastructure Automation with Terraform & LocalStack
 
 ![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.14.0-844FBA?logo=terraform)
+![Docker Version](https://img.shields.io/badge/docker-%3E%3D29.2.1-2496ED?logo=docker)
 
 ## 🚀 Overview
 This repository demonstrates a complete **Infrastructure as Code (IaC)** workflow. It aims to simulate a production-ready cloud environment locally, focusing on security, data resilience, and developer experience (DevEx).<br>
