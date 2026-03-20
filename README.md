@@ -1,8 +1,9 @@
 # AWS Infrastructure Automation with Terraform & LocalStack
 
+![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.0-blue)
+
 ## 🚀 Overview
 This repository demonstrates a complete **Infrastructure as Code (IaC)** workflow. It aims to simulate a production-ready cloud environment locally, focusing on security, data resilience, and developer experience (DevEx).
-
 This project automates the provisioning of AWS resources in a local environment (WSL2/Ubuntu). It uses Terraform to manage S3 buckets (with versioning) and IAM users. An integrated setup script automates the entire process from Docker to the Terraform application.
 
 ---
@@ -29,8 +30,9 @@ I've included a `setup.sh` script to handle the heavy lifting. This script autom
 
 1.  **Clone the repo and enter the folder:**
     ```bash
-    git clone <your-repo-url>
-    cd projeto_terraform
+    mkdir terraform_project && cd terraform_project
+    git clone https://github.com/alexcolombari/terraform-project-1-aws
+    cd terraform-project-1-aws
     ```
 
 2.  **Run the automated setup:**
@@ -46,6 +48,11 @@ I've included a `setup.sh` script to handle the heavy lifting. This script autom
     
     # Check attached policies for a user
     awslocal iam list-attached-user-policies --user-name alex
+    ```
+
+4.  **Destroy the resources:**
+    ```bash
+    terraform destroy
     ```
 
 ---
